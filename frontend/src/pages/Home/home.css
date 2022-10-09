@@ -1,0 +1,44 @@
+nav {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+nav .navbar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 567px) {
+  nav .navbar {
+    flex-direction: column;
+  }
+}
+nav .container img {
+  width: 200px;
+  height: 70px;
+  object-fit: cover;
+  max-width: 100%;
+  text-align: center;
+}
+nav .container .profile {
+  font-weight: bold;
+  transition: 0.5s;
+  text-decoration: none;
+}
+nav .container .profile:hover {
+  color: red;
+  text-decoration: underline;
+}
+nav .container button {
+  padding: 8px 25px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(20, 19, 19, 0.212);
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+nav .container button:hover {
+  color: white;
+  background-color: red;
+}

@@ -1,0 +1,277 @@
+.new {
+  text-align: center;
+  margin-top: 20px;
+}
+.new .new-content {
+  margin: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (min-width: 576px) {
+  .new .new-content {
+    width: calc(100% - 300px);
+  }
+}
+.new .new-content > span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+.new .container input {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(238, 238, 238, 0.212);
+}
+.new .container .info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(0, 0, 0, 0.123);
+}
+.new .container .info input {
+  display: none;
+}
+.new .container .info span {
+  font-size: 25px;
+  cursor: pointer;
+}
+.new .container .info button {
+  padding: 8px 25px;
+  cursor: pointer;
+  border: none;
+  background-color: #80008085;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.new .container .info button:hover {
+  background-color: purple;
+}
+
+.posts {
+  margin-top: 40px;
+}
+.posts .parent {
+  position: relative;
+}
+.post-info {
+  width: 500px;
+  max-width: 100%;
+  margin: 30px auto;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.posts .post-info .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts .post-info .user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.posts .post-info .user .created-at {
+  font-size: 12px;
+  font-weight: bold;
+}
+.posts .post-info .user .edit {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.posts .post-info .user .edit:hover {
+  color: blue;
+}
+.posts .post-info .user .delete {
+  cursor: pointer;
+}
+.posts .post-info .user span svg {
+  font-size: 20px;
+}
+.posts .post-info .user .delete svg:hover {
+  color: red;
+}
+.posts .post-info .user h3 {
+  font-size: 15px;
+}
+.posts .post-info .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.post-info .post p {
+  font-size: 18px;
+  padding: 6px;
+  font-weight: bold;
+}
+.post-info .post-reactions {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 10px;
+}
+.post-info .post img {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.post-info .likes,
+.post-info .features .dis-like {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.post-info .likes svg {
+  font-size: 20px;
+  color: blue;
+}
+.posts .post-info .features {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.212);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  padding: 10px 0;
+  gap: 10px;
+}
+.posts .post-info .features .like, .post-info .features .dis-like {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.posts .post-info .features .like-done {
+  color: blue;
+}
+.posts .post-info .likes-count {
+  font-weight: bold;
+}
+.posts .post-info .features .comment {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 3px;
+  cursor: pointer;
+}
+.posts .post-info .comments {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(39, 25, 25, 0.048);
+}
+.posts .post-info .comments .user-comment {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.posts .post-info .comments span {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.posts .post-info .comments .delete-comment:hover {
+  color: red;
+}
+.posts .post-info .comments img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.posts .post-info .comments .comment {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.posts .post-info .new-comment {
+  position: relative;
+  margin-top: 10px;
+}
+.posts .post-info .new-comment input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #0000002f;
+}
+.posts .post-info .new-comment span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+}
+.posts .post-info .new-comment span:hover {
+  color: blue;
+}
+
+/* edit  */
+.posts .post-det button {
+  margin: 0 5px;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.posts .post-det button.save {
+  color: white;
+  background-color: #00bcd4;
+}
+.posts .post > input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  outline: none;
+}
+.posts .image-edit {
+  position: relative;
+  text-align: center;
+}
+.posts .image-edit .change-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.posts .img-error {
+  margin: 50px 0;
+}
+.post .image-edit .add-pic {
+  width: 150px;
+  margin: auto;
+}
+.posts .image-edit input {
+  display: none;
+}
+.posts .image-edit label {
+  background-color: #70c0cb;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
